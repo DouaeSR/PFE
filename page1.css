@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #1b4956;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #ededed;
+    font-size: 17px;
+    font-weight: 300 lighter;
+    font-style: italic;
+    height: 20px;
+    font-family: "Roboto condensed";
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+.navbar-links a:hover {
+    background-color: #555;
+}
+
+/* CSS for the image */
+.image-container {
+    margin: 0;
+    padding: 0;
+    background-image: url('téléchargement\ \(3\).jpg'); /* Specify your image URL */
+    background-repeat: repeat; /* Make the image repeat */
+}
+
+/* CSS for the content on the image */
+.image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* CSS for the button */
+.image-button {
+    background-color: rgba(77, 77, 77, 0.2);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #ededed;
+    border-style:none;
+   
+}
+.image-button:hover {
+    color: black;
+    background-color:white;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-color:#62b6cb ;
+}
+
+.box {
+    background-color:transparent;
+    color: white;
+    width: 200px;
+    padding: 20px ;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+.box p {
+    margin-bottom: 0;
+}
+.box img {
+   width: 50%;
+   
+   max-width: 80%;
+}
+
+
+
+
+
+/* <img src="téléchargement (3).jpg" alt="Your Image">
+.image-container img {
+    width: 100%;
+    height: auto; 
+    max-height: 90vh;
+    overflow: auto;
+}
