@@ -44,7 +44,7 @@ body {
 .image-container {
     margin: 0;
     padding: 0;
-    background-image: url('téléchargement\ \(3\).jpg'); /* Specify your image URL */
+    background-image: url(pictures/Understanding\ Health\ Insurance\ in\ Portugal\ -\ Portugalist.jpg); /* Specify your image URL */
     background-repeat: repeat; /* Make the image repeat */
 }
 
@@ -55,6 +55,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    align-items: center;
 }
 
 /* CSS for the button */
