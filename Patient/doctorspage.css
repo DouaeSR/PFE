@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #5598a5;
+    color: #020202;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.brand {
+    font-size: 20px;
+    margin-left: 20px; 
+    font-family: "Major Mono Display";
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 150px; }
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+ .mail-icon i{
+    margin-left: auto;
+    width: 30px;
+    color: #020202;
+}
+
+.doctor-profile {
+    float: left;
+    margin: 20px;
+    margin-top: 0;
+    padding: 30px;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+   
+}
+
+.info {
+    text-align: center;
+}
+
+.info hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.rating {
+    color: #ffcc00;
+    font-size: 24px;
+}
+
+.navigation-bar {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation-bar li:last-child {
+    margin-right: 0;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navigation-bar a.active {
+    border-bottom: 2px solid #007bff;
+    position: relative;
+}
+
+.navigation-bar a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #007bff;
+}
+
+.navigation-bar a:hover {
+    color: #007bff;
+}
+
+.appointment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    padding: 20px 70px;
+    margin-top: 20px;
+}
+
+.part {
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.details {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+.part2{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-button, .book-now-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map-button:hover, .book-now-button:hover {
+    background-color: #0056b3;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+.month {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.days button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.days button:hover {
+    background-color: #f2f2f2;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.available,
+.not-available {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.available {
+    background-color: green;
+}
+
+.not-available {
+    background-color: red;
+}

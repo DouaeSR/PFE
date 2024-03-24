@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #5598a5;
+    color: #020202;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.brand {
+    font-size: 20px;
+    margin-left: 20px; 
+    font-family: "Major Mono Display";
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 150px; }
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+ .mail-icon i{
+    margin-left: auto;
+    width: 30px;
+    color: #020202;
+}
+
+.filter-bar {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-options {
+    display: flex;
+}
+
+.filter-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.filter-button:hover {
+    background-color: #e6e6e6;
+}
+
+.filter-options span {
+    margin-right: 5px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filter span {
+    margin-right: 5px;
+}
+
+.filter i {
+    width: 20px;
+    height: 20px;
+}
+
+.doctor-list {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.doctor-box {
+    width: 200px; /* Fixed width of each doctor box */
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove default link underline */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.doctor-box:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff; /* Blue color for doctor name */
+}
+
+.info p {
+    margin: 5px 0;
+    color: #666; /* Dark gray color for other text */
+}
+
+.rating {
+    color: #ffcc00; /* Yellow color for rating */
+    font-weight: bold;
+}
+
+.details p {
+    margin: 5px 0;
+    font-size: 14px;
+    
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5598a5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.pagination a:hover {
+    background-color:#44828f;
+}
+
+.footer {
+    background-color: #9eafc9;
+    color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

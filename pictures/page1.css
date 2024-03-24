@@ -55,7 +55,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    text-align: center;
     align-items: center;
+    font-family: "Roboto condensed";
+}
+.image-content h1 {
+    font-size: 70px;
+    font-weight:lighter;
+    height: 66px;
+    font-family: "Roboto condensed"
+}
+.image-content h2 {
+    font-size: 60px;
+    font-weight:bold;
+    height: 66px;
+    font-family: "Roboto condensed"
+
 }
 
 /* CSS for the button */

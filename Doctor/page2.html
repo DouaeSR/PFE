@@ -8,17 +8,20 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-           
-            <a href="#" class="navbar-logo">Your Logo</a>
-
-
-            <div class="navbar-links">
-                <a href="#">SIGN IN</a>
-                <a href="#">SIGN UP</a>
+        <nav class="navbar">
+            <div class="menu-icon">&#9776;</div>
+            <div class="brand">DABS</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type to search">
             </div>
-        </div>
+            <div class="mail-icon">
+                <a href="mailto:youremail@example.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+        </nav>
     </header>
+    
     <div class="container">
         <span class="prev" onclick="prevMonth()">&lt;</span>
         <div class="calendar">
@@ -40,6 +43,19 @@
         </div>
         <span class="next" onclick="nextMonth()">&gt;</span>
     </div>
+    <form id="appointmentForm">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="reason" placeholder="Reason">
+        <input type="date" name="date">
+        <input type="time" name="time">
+        <select name="status">
+            <option value="pending">Pending</option>
+            <option value="confirmed">Confirmed</option>
+            <option value="canceled">Canceled</option>
+        </select>
+        <button type="submit">Add Appointment</button>
+    </form>
+</div>
 
     <script>
         const calendarDays = document.getElementById('calendarDays');
@@ -99,6 +115,63 @@
             const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             return monthNames[month];
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const appointmentForm = document.getElementById('appointmentForm');
+    const appointmentsTable = document.getElementById('appointmentsTable');
+    const appointmentsArray = []; // Array to store appointments
+
+    appointmentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const formData = new FormData(appointmentForm);
+
+        const name = formData.get('name');
+        const reason = formData.get('reason');
+        const date = formData.get('date');
+        const time = formData.get('time');
+        const status = formData.get('status');
+
+        if (!name || !reason || !date || !time) {
+            alert('Please fill in all fields.');
+            return;
+        }
+
+        const newAppointment = {
+            name: name,
+            reason: reason,
+            date: date,
+            time: time,
+            status: status
+        };
+
+        // Push new appointment into the array
+        appointmentsArray.push(newAppointment);
+
+        // Update the appointments table
+        renderAppointments();
+
+        appointmentForm.reset();
+    });
+
+    function renderAppointments() {
+        // Clear the table
+        appointmentsTable.innerHTML = '';
+
+        // Loop through the appointments array and render each appointment in the table
+        appointmentsArray.forEach(function(appointment) {
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${appointment.name}</td>
+                <td>${appointment.reason}</td>
+                <td>${appointment.date}</td>
+                <td>${appointment.time}</td>
+                <td>${appointment.status}</td>
+            `;
+            appointmentsTable.appendChild(newRow);
+        });
+    }
+});
     </script>
 </body>
 </html>
